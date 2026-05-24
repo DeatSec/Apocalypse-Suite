@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ---
 
-## USAGE SERVER AND BOT SERVER
+USAGE SERVER AND BOT SERVER
 
 1. cd Apocalypse-Suite
 2. python server/c2_server.py  
