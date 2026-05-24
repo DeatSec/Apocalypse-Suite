@@ -32,6 +32,6 @@ FEATURES
 ## 📦 INSTALLATION
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Apocalypse-Bot.git
+git clone https://github.com/DeatSec/Apocalypse-Bot.git
 cd Apocalypse-Bot
 pip install -r requirements.txt
