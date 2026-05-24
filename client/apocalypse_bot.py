@@ -26,9 +26,9 @@ RESET = '\033[0m'
 # Simple Banner
 BANNER = f"""
 {CYAN}┌─────────────────────────────────────────┐
-│  🤖 APOCALYPSE BOT v7.0                   │
-│  BY: 𝙳𝚎𝚊𝚝Nex                              │
-│  🔗 MEGA STEALTH - 80+ UA & REF           │
+│  🤖 APOCALYPSE BOT v7.0                   
+│  BY: 𝙳𝚎𝚊𝚝Nex                              
+│  L7 Master           
 └─────────────────────────────────────────┘{RESET}
 """
 
