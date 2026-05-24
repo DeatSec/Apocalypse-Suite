@@ -1,0 +1,19 @@
+# APOCALYPSE BOT CONFIG
+# BY: 𝙳𝚎𝚊𝚝Nex
+
+c2:
+  host: "0.0.0.0"
+  port: 4444
+
+attack:
+  default_duration: 60
+  max_threads: 1000
+  timeout: 3
+
+stealth:
+  random_delay: true
+  min_delay: 0.01
+  max_delay: 0.08
+
+display:
+  color: true
