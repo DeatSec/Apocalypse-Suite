@@ -35,3 +35,16 @@ FEATURES
 git clone https://github.com/DeatSec/Apocalypse-Bot.git
 cd Apocalypse-Bot
 pip install -r requirements.txt
+
+---
+
+## USAGE BOT
+
+```bash
+1. cd Apocalypse-Bot
+   python client/apocalypse_bot.py
+2. [?] C2 IP (default: 127.0.0.1):
+    *Satu perangkat → langsung tekan Enter
+    *Beda perangkat → ketik IP server (contoh: 192.168.1.100)
+3. [C2] > attack 1 https://target.com 60
+   Command Format: attack <mode 1,2,3,...> <target> <duration>
